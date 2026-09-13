@@ -30,3 +30,7 @@ The site address will be https://tanmay4269.github.io/ once GitHub finishes depl
 
 Commit only site files; keep private drafts and source documents out of this repository.
 Google Docs and resume links stay at their existing URLs. Check that visitors can open them without signing in.
+
+## Theme exploration branch
+
+Open `explore.html` for a separate control bar with four palettes and four font pairings. The website remains in `index.html` and has only the small light/dark switch. Choices reset when the preview reloads. Fonts use local system stacks, so their exact appearance can differ across operating systems. Rosé Pine colours are based on https://rosepinetheme.com/palette/.
