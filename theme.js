@@ -9,10 +9,16 @@ document.querySelectorAll('.email-link').forEach(link => {
 	link.href = `mailto:${email}`;
 });
 
+const updateToggleLabel = () => {
+	const label = `Switch to ${root.dataset.mode === 'dark' ? 'light' : 'dark'} mode`;
+	toggle.setAttribute('aria-label', label);
+	toggle.title = label;
+};
+
+updateToggleLabel();
+
 toggle.addEventListener('click', () => {
 	const dark = root.dataset.mode !== 'dark';
 	root.dataset.mode = dark ? 'dark' : 'light';
-	const label = `Switch to ${dark ? 'light' : 'dark'} mode`;
-	toggle.setAttribute('aria-label', label);
-	toggle.title = label;
+	updateToggleLabel();
 });
