@@ -73,6 +73,18 @@ article .work-meta { font-size: 11px; color: var(--muted); margin-bottom: 0; }
 	line-height: 1.5;
 	letter-spacing: .02em;
 }
+.topic-badge.ai-safety { font-weight: 600; }
+.topic-badge.ai-research {
+	background: #f3f5ef;
+	border-color: #d9ded1;
+	color: #6d7965;
+	font-weight: 500;
+}
+:root[data-mode="dark"] .topic-badge.ai-research {
+	background: #252c24;
+	border-color: #3f4c3d;
+	color: #aebaa8;
+}
 .project-date { display: block; margin-bottom: 7px; color: var(--muted); font-size: 11px; }
 .other-project { padding-top: 23px; }
 .contact { padding: 27px 0 35px; border-top: 1px solid var(--line); }
